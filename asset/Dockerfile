@@ -6,7 +6,7 @@ ARG TARGETARCH
 
 ARG VERSION_CHECK="https://api.github.com/repos/aircross/trojan_docker/releases/latest"
 
-ARG DOWNLAOD_URL="https://github.com/Jrohy/trojan/releases/download/"
+ARG DOWNLAOD_URL="https://github.com/aircross/trojan_docker/releases/download/"
 
 ARG SERVICE_URL="https://raw.githubusercontent.com/aircross/trojan_docker/master/asset/trojan-web.service"
 
