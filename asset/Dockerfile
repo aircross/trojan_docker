@@ -1,14 +1,14 @@
 FROM --platform=$TARGETPLATFORM centos:7
 
-LABEL maintainer="Jrohy <euvkzx@Jrohy.com>"
+LABEL maintainer="John"
 
 ARG TARGETARCH
 
-ARG VERSION_CHECK="https://api.github.com/repos/Jrohy/trojan/releases/latest"
+ARG VERSION_CHECK="https://api.github.com/repos/aircross/trojan_docker/releases/latest"
 
-ARG DOWNLAOD_URL="https://github.com/Jrohy/trojan/releases/download/"
+ARG DOWNLAOD_URL="https://github.com/aircross/trojan_docker/releases/download/"
 
-ARG SERVICE_URL="https://raw.githubusercontent.com/Jrohy/trojan/master/asset/trojan-web.service"
+ARG SERVICE_URL="https://raw.githubusercontent.com/aircross/trojan_docker/master/asset/trojan-web.service"
 
 RUN yum install socat bash-completion crontabs iptables openssl unzip -y && \
     LATEST_VERSION=`curl -H 'Cache-Control: no-cache' -s "$VERSION_CHECK" | grep 'tag_name' | cut -d\" -f4` && \
