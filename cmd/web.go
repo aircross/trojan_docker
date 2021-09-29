@@ -22,7 +22,7 @@ var webCmd = &cobra.Command{
 
 func init() {
 	webCmd.Flags().StringVarP(&host, "host", "", "0.0.0.0", "web服务监听地址")
-	webCmd.Flags().IntVarP(&port, "port", "p", 80, "web服务启动端口")
+	webCmd.Flags().IntVarP(&port, "port", "p", 10086, "web服务启动端口")
 	webCmd.Flags().BoolVarP(&ssl, "ssl", "", false, "web服务是否以https方式运行")
 	rootCmd.AddCommand(webCmd)
 }
