@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM centos:7
+FROM --platform=$TARGETPLATFORM Ubuntu:20.4
 
 LABEL maintainer="John"
 
