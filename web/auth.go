@@ -128,7 +128,7 @@ func Auth(r *gin.Engine) *jwt.GinJWTMiddleware {
 		} else {
 			title, err := core.GetValue("login_title")
 			if err != nil {
-				title = "trojan 管理平台"
+				title = "内部采购集中管理平台"
 			}
 			c.JSON(200, gin.H{
 				"code":    200,
